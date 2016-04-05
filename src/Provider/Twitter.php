@@ -25,7 +25,7 @@ class Twitter extends AbstractProvider
 	public function getAuthorizationUrl(array $options = []) {
 		$connection = new TwitterOAuth($this->clientId, $this->clientSecret);
 		$request_token = $connection->oauth('oauth/request_token', array('oauth_callback' => $this->redirectUri));
-		$options["caller"]->Session->write('twitter.request_token', $request_token);
+		$options["session"]->write('twitter.request_token', $request_token);
 		$url = $connection->url('oauth/authenticate', array('oauth_token' => $request_token['oauth_token']));
 		return $url;
 	}
