@@ -2,7 +2,7 @@
 /**
  * TwitterResourceOwner
  */
-namespace League\OAuth2\Client\Provider;
+namespace Kukiwasabi\OAuth2\Client\Provider;
 
 class TwitterResourceOwner implements ResourceOwnerInterface
 {

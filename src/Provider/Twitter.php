@@ -2,12 +2,13 @@
 /**
  * Twitter
  */
-namespace League\OAuth2\Client\Provider;
+namespace Kukiwasabi\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use Psr\Http\Message\ResponseInterface;
 use Abraham\TwitterOAuth\TwitterOAuth;
+use League\OAuth2\Client\Provider\AbstractProvider;
 
 class Twitter extends AbstractProvider
 {
